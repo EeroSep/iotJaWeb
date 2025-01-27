@@ -1,0 +1,93 @@
+p {
+    font-family: "Lucida Console", "Courier New";
+    color: #303030;
+    transition: transform 0.3s ease;
+}
+p:hover {
+    transform: rotate(90deg);
+}
+h1 {
+    font-size: 50px;
+    color: #3E3E3E;
+}
+h3 {
+    font-size: 40px;
+    color: #5D5D5D;
+}
+li {
+    list-style-type: circle;
+    color: blue;
+}
+table {
+    margin: 5px;
+    width: 25%;
+    align-items: center;
+    border-spacing: 5px;
+    margin: auto;
+}
+td {
+    border: 3px solid black;
+    padding: 15px;
+}
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+table tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+img {
+   border-radius: 10%; 
+   border: 2px solid black;
+}
+a:link {
+    color: red;
+}
+a:hover {
+    color: black;
+
+}
+a:visited {
+    color: green;
+}
+article {
+    margin: 0;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+header {
+    padding: 40px;
+    text-align: center;
+    background: navy;
+    color: white;
+    font-size: 30px;
+}
+h2 {
+    color: white;
+}
+footer {
+    padding: 40px;
+    text-align: center;
+    background: navy;
+    color: white;
+    font-size: 30px;
+}
+.flex-container {
+    display: flex;
+  }
+  
+.headervari{
+animation-name: varivaihto;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+ 
+ @keyframes varivaihto {
+    0%   {background-color: blue;}
+    50%  {background-color: blueviolet;}
+    80%  {background-color: navy;}
+    100%   {background-color: blue;}
+
+ }
