@@ -1,0 +1,22 @@
+body{
+text-align: right;
+margin: auto;
+}
+a {
+    font-size: 2rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    max-width: 300px;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+@media screen and (max-width: 800px) { 
+    .navbar{
+        margin: auto;
+    }
+}

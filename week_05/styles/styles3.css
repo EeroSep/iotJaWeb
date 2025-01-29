@@ -1,0 +1,78 @@
+* {
+    border-radius: 5px;
+}
+.grid-container {
+    width: 75%;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr 2fr;
+    grid-template-rows: 1fr 7fr 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    ". header header ." 
+    "mainos main sivuosa mainos2" 
+    ". footer footer .";
+}
+.sivuosa {
+    grid-area: sivuosa;
+    background-color: #c97c5d;
+}
+.mainos{
+    grid-area: mainos;
+    max-height: 40vh;
+}
+.mainos2{
+    grid-area: mainos2;
+    max-height: 30vh;
+}
+header{
+    grid-area: header;
+    padding: 10px;
+    background-color: #b36a5e;
+    text-align: center;
+
+}
+img {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+main {
+    grid-area: main;
+    background-color: #b36a5e;
+    padding: 10px;
+    text-align: center;
+    min-height: 50vh;
+}
+footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color: #b36a5e;
+    text-align: center;
+}
+body{
+    color: #EEE2DF;
+    background-color: #eee3df;
+}
+a {
+    font-size: 30px;
+    color: #eed7c5;
+}
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "mainos"
+            "main"
+            "sivuosa"
+            "mainos2"
+            "footer"; 
+        grid-template-rows: auto auto 1fr auto auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+
